@@ -29,6 +29,10 @@ function App() {
     }
   }, [ gastoEditar ])
 
+  useEffect(() => {
+
+  }, [presupuesto])
+
   const handleNuevoGasto = () => {
     setModal(true)
     setGastoEditar({})
