@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { CircularProgressbar } from "react-circular-progressbar"
+import { CircularProgressbar } from 'react-CircularProgressbar'
 
 
 const ControlPresupuesto = ({gastos, presupuesto}) => {
