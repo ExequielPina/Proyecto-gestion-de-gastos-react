@@ -58,17 +58,17 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto, gastoEditar
             <form onSubmit={andleSubmit} className={`formulario ${animarModal ? "animar" : 'cerrar'}`}>
                 <legend>{gastoEditar.nombre ? 'Editar gasto' : 'Nuevo gasto'}</legend>
                 {mensaje && <Mensaje tipo="error">{mensaje}</Mensaje>}
-                <div className="campo">
-                    <label htmlFor='nombre'>Nombre del gasto</label>
+                    <div className="campo">
+                        <label htmlFor='nombre'>Nombre del gasto</label>
 
-                    <input
-                        id="nombre"
-                        type="text"
-                        placeholder="Añade el nombre del gasto"
-                        value={nombre}
-                        onChange={ e => setNombre(e.target.value)}
-                    />
-                </div>
+                        <input
+                            id="nombre"
+                            type="text"
+                            placeholder="Añade el nombre del gasto"
+                            value={nombre}
+                            onChange={ e => setNombre(e.target.value)}
+                        />
+                    </div>
 
                 <div className="campo">
                     <label htmlFor='nombre'>Cantidad</label>
